@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio & Case Studies | Young & Molded Org</title>
+<meta name="description" content="Selected work across photography, video, branding, websites, marketing, events, and technology.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { brand: { cyan:'#38e2f8', dark:'#0f172a' } } } } }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            cyan: '#38e2f8',
+            dark: '#0f172a',
+            subtle: '#f1f5f9',
+            cardBg: 'rgba(255, 255, 255, 0.85)',
+            border: '#e2e8f0'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="selection:bg-cyan-300 selection:text-slate-900">
+
+<!-- HEADER (copy the identical header block from packages.html) -->
+<header id="site-header" class="site-header glass-nav">
+  
+  <div class="container"><div class="flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg" style="background:#0f172a;color:#38e2f8;">Y</div><div class="leading-tight"><span class="font-black text-lg tracking-tight block text-[#0f172a]">YOUNG & MOLDED</span><span class="text-[10px] tracking-[0.25em] uppercase font-bold" style="color:#0891b2;">ORG · PTY LTD</span></div></a>
+      <nav class="hidden lg:flex items-center gap-7">
+  <a href="index.html" data-nav="index.html" class="nav-link">Home</a>
+  <a href="about.html" data-nav="about.html" class="nav-link">About</a>
+  <a href="services.html" data-nav="services.html" class="nav-link">Services</a>
+  <a href="packages.html" data-nav="packages.html" class="nav-link">Packages</a>
+  <a href="portfolio.html" data-nav="portfolio.html" class="nav-link">Portfolio</a> 
+  <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+</nav>
+    <div class="flex items-center gap-3"><a href="quote.html" class="hidden sm:inline-flex btn-primary" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get a Quote</a><button onclick="openDrawer()" class="lg:hidden p-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#0f172a;"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+  </div></div>
+</header>
+<div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+  <aside id="mobile-drawer" class="mobile-drawer">
+  <div class="flex items-center justify-between mb-8">
+    <span class="font-black tracking-widest text-sm" style="color:#0891b2;">MENU</span>
+    <button onclick="closeDrawer()" class="text-2xl text-[#0f172a]" aria-label="Close">✕</button>
+  </div>
+  <nav class="flex flex-col gap-1">
+    <a href="index.html" class="nav-link" style="display:block;padding:0.85rem 0;">Home</a>
+    <a href="about.html" class="nav-link" style="display:block;padding:0.85rem 0;">About</a>
+    <a href="services.html" class="nav-link" style="display:block;padding:0.85rem 0;">Services</a>
+    <a href="packages.html" class="nav-link" style="display:block;padding:0.85rem 0;">Packages</a>
+    <a href="portfolio.html" class="nav-link" style="display:block;padding:0.85rem 0;">Portfolio</a>   
+    <a href="contact.html" class="nav-link" style="display:block;padding:0.85rem 0;">Contact</a>
+  </nav>
+  <a href="quote.html" class="btn-primary w-full justify-center mt-8">Get a Quote →</a>
+  <button onclick="openWhatsApp()" class="btn-whatsapp w-full justify-center mt-3">WhatsApp Us</button>
+</aside>
+
+<!-- HERO -->
+<section class="hero-section" style="padding-bottom:2rem;">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container relative text-center" style="z-index:1;">
+    <span class="eyebrow">Portfolio</span>
+    <h1 class="hero-headline text-[clamp(2.2rem,7vw,5rem)] mt-4 mb-5" style="color:#0f172a;">Real Work.<br><span class="text-gradient-cyan">Real Impact.</span></h1>
+    <p class="text-[#475569] max-w-2xl mx-auto">A selection of campaigns, launches, and brand transformations. Click any project to read the case study.</p>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<section class="section-pad" style="padding-top:1rem;padding-bottom:1rem;">
+  <div class="container">
+    <div class="flex flex-wrap gap-2 justify-center" id="portfolio-filters">
+      <button class="pill pill-cyan active" data-filter="all">ALL</button>
+      <button class="pill" data-filter="photo">PHOTOGRAPHY</button>
+      <button class="pill" data-filter="video">VIDEO</button>
+      <button class="pill" data-filter="brand">BRANDING</button>
+      <button class="pill" data-filter="web">WEBSITES</button>
+      <button class="pill" data-filter="marketing">MARKETING</button>
+      <button class="pill" data-filter="events">EVENTS</button>
+      <button class="pill" data-filter="tech">TECH</button>
+    </div>
+  </div>
+</section>
+
+<!-- GRID -->
+<section class="section-pad" style="padding-top:2rem;">
+  <div class="container">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="portfolio-grid">
+
+      <div class="portfolio-item reveal" data-cat="brand web">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#a5f3fc,#38e2f8);"><span class="text-4xl">🎨</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Branding · Web</span>
+          <h3 class="text-white font-bold">Luxe Retail — Full Rebrand + E-commerce</h3>
+          <p class="text-white/70 text-xs mt-1">+320% sales in Q1</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="video">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#cbd5e1,#94a3b8);"><span class="text-4xl">🎥</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Video</span>
+          <h3 class="text-white font-bold">African Equity — Brand Film</h3>
+          <p class="text-white/70 text-xs mt-1">+210% inbound leads</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="tech">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#67e8f9,#06b6d4);"><span class="text-4xl">🤖</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Tech · AI</span>
+          <h3 class="text-white font-bold">TechFlow SA — Sales Automation</h3>
+          <p class="text-white/70 text-xs mt-1">40 hrs/week saved</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="photo">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#e2e8f0,#cbd5e1);"><span class="text-4xl">📷</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Photography</span>
+          <h3 class="text-white font-bold">Apex Properties — Architecture Series</h3>
+          <p class="text-white/70 text-xs mt-1">12 flagship listings</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="marketing">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#a5f3fc,#0891b2);"><span class="text-4xl">📈</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Marketing</span>
+          <h3 class="text-white font-bold">Kasi Coffee — Social Growth</h3>
+          <p class="text-white/70 text-xs mt-1">0 → 48k followers in 6 months</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="events">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#c7d2fe,#818cf8);"><span class="text-4xl">🎉</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Events</span>
+          <h3 class="text-white font-bold">Nova Labs — Product Launch</h3>
+          <p class="text-white/70 text-xs mt-1">800 attendees, 3.2M impressions</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="web">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#5eead4,#0891b2);"><span class="text-4xl">💻</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Web</span>
+          <h3 class="text-white font-bold">MediCare SA — Patient Portal</h3>
+          <p class="text-white/70 text-xs mt-1">98 PageSpeed score</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="photo brand">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#fde68a,#f59e0b);"><span class="text-4xl">✨</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Photo · Branding</span>
+          <h3 class="text-white font-bold">Rose & Co — Lifestyle Campaign</h3>
+          <p class="text-white/70 text-xs mt-1">3 editorial features</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-cat="video marketing">
+        <div class="w-full h-full flex items-center justify-center" style="background:linear-gradient(135deg,#fbcfe8,#ec4899);"><span class="text-4xl">🎬</span></div>
+        <div class="overlay">
+          <span class="pill pill-cyan mb-2 self-start">Video · Marketing</span>
+          <h3 class="text-white font-bold">Urban Youth — Viral Campaign</h3>
+          <p class="text-white/70 text-xs mt-1">1.8M organic views</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY CTA -->
+<section class="section-pad" style="background:rgba(241,245,249,0.6);border-top:1px solid rgba(226,232,240,0.8);">
+  <div class="container">
+    <div class="card card-highlight p-8 md:p-12 text-center reveal max-w-3xl mx-auto">
+      <span class="eyebrow">Like What You See?</span>
+      <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">Start a Similar Project.</h2>
+      <p class="text-[#475569] mb-6">Every project here started with a single quote request. Yours can too.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="quote.html" class="btn-cyan">Get a Quote →</a>
+        <button onclick="openWhatsApp()" class="btn-whatsapp" data-whatsapp>WhatsApp Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (copy identical from packages.html) -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#94a3b8]">
+      <p>© 2026 Young & Molded Org (Pty) Ltd. All rights reserved.</p>
+      <div class="flex gap-5"><a href="#" class="footer-link">Privacy</a><a href="#" class="footer-link">Terms</a><a href="contact.html" class="footer-link">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL (copy identical) -->
+<div id="action-modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="flex items-center justify-between mb-5"><h3 class="display-sm" data-modal-title style="color:#0f172a;">Get Started</h3><button onclick="closeModal()" class="text-2xl text-[#94a3b8] hover:text-[#0f172a]">✕</button></div>
+    <p class="text-[#475569] text-sm mb-6" data-modal-desc>Connect with our team.</p>
+    <form onsubmit="handleFormSubmit(event,'consultation')"><label class="form-label">Your Email</label><input type="email" class="form-input mb-4" placeholder="you@company.com" required><button type="submit" class="btn-cyan w-full justify-center" data-modal-cta>Confirm Request</button></form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+// Portfolio filter
+document.querySelectorAll('#portfolio-filters button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#portfolio-filters button').forEach(b => b.classList.remove('pill-cyan','active'));
+    btn.classList.add('pill-cyan','active');
+    const f = btn.getAttribute('data-filter');
+    document.querySelectorAll('#portfolio-grid .portfolio-item').forEach(item => {
+      const cats = item.getAttribute('data-cat') || '';
+      item.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Young & Molded Org</title>
+<meta name="description" content="Get in touch with Young & Molded Org — Johannesburg. Call, email, WhatsApp, or submit the contact form.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: { colors: { brand: { cyan:'#38e2f8', dark:'#0f172a' } } } } }</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            cyan: '#38e2f8',
+            dark: '#0f172a',
+            subtle: '#f1f5f9',
+            cardBg: 'rgba(255, 255, 255, 0.85)',
+            border: '#e2e8f0'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="selection:bg-cyan-300 selection:text-slate-900">
+
+<!-- HEADER (paste identical) -->
+<header id="site-header" class="site-header glass-nav">  
+  <div class="container"><div class="flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg" style="background:#0f172a;color:#38e2f8;">Y</div><div class="leading-tight"><span class="font-black text-lg tracking-tight block text-[#0f172a]">YOUNG & MOLDED</span><span class="text-[10px] tracking-[0.25em] uppercase font-bold" style="color:#0891b2;">ORG · PTY LTD</span></div></a>
+        <nav class="hidden lg:flex items-center gap-7">
+  <a href="index.html" data-nav="index.html" class="nav-link">Home</a>
+  <a href="about.html" data-nav="about.html" class="nav-link">About</a>
+  <a href="services.html" data-nav="services.html" class="nav-link">Services</a>
+  <a href="packages.html" data-nav="packages.html" class="nav-link">Packages</a>
+  <a href="portfolio.html" data-nav="portfolio.html" class="nav-link">Portfolio</a> 
+  <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+</nav>
+    <div class="flex items-center gap-3"><a href="quote.html" class="hidden sm:inline-flex btn-primary" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get a Quote</a><button onclick="openDrawer()" class="lg:hidden p-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#0f172a;"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+  </div></div>
+</header>
+<div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+<aside id="mobile-drawer" class="mobile-drawer">
+  <div class="flex items-center justify-between mb-8">
+    <span class="font-black tracking-widest text-sm" style="color:#0891b2;">MENU</span>
+    <button onclick="closeDrawer()" class="text-2xl text-[#0f172a]" aria-label="Close">✕</button>
+  </div>
+  <nav class="flex flex-col gap-1">
+    <a href="index.html" class="nav-link" style="display:block;padding:0.85rem 0;">Home</a>
+    <a href="about.html" class="nav-link" style="display:block;padding:0.85rem 0;">About</a>
+    <a href="services.html" class="nav-link" style="display:block;padding:0.85rem 0;">Services</a>
+    <a href="packages.html" class="nav-link" style="display:block;padding:0.85rem 0;">Packages</a>
+    <a href="portfolio.html" class="nav-link" style="display:block;padding:0.85rem 0;">Portfolio</a>   
+    <a href="contact.html" class="nav-link" style="display:block;padding:0.85rem 0;">Contact</a>
+  </nav>
+  <a href="quote.html" class="btn-primary w-full justify-center mt-8">Get a Quote →</a>
+  <button onclick="openWhatsApp()" class="btn-whatsapp w-full justify-center mt-3">WhatsApp Us</button>
+</aside>
+
+<!-- HERO -->
+<section class="hero-section" style="padding-bottom:3rem;">
+  <div class="hero-glow-1"></div><div class="hero-glow-2"></div>
+  <div class="container relative text-center" style="z-index:1;">
+    <span class="eyebrow">Contact</span>
+    <h1 class="hero-headline text-[clamp(2.2rem,7vw,5rem)] mt-4 mb-5" style="color:#0f172a;">Let's Talk<br><span class="text-gradient-cyan">Real Impact.</span></h1>
+    <p class="text-[#475569] max-w-2xl mx-auto">Call, email, WhatsApp, or send us a message. We reply within one business day.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-pad" style="padding-top:2rem;">
+  <div class="container">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Contact info cards -->
+      <div class="space-y-4">
+        <div class="glass-card p-6 reveal">
+          <div class="text-2xl mb-2">📞</div>
+          <h3 class="font-bold text-[#0f172a] mb-1">Call Us</h3>
+          <a href="tel:+27100000000" class="text-sm" style="color:#0891b2;">+27 10 000 0000</a>
+          <p class="text-xs text-[#94a3b8] mt-1">Mon–Fri, 08:00–17:00 SAST</p>
+        </div>
+        <div class="glass-card p-6 reveal" style="transition-delay:0.05s;">
+          <div class="text-2xl mb-2">✉️</div>
+          <h3 class="font-bold text-[#0f172a] mb-1">Email Us</h3>
+          <a href="mailto:hello@youngmolded.org" class="text-sm" style="color:#0891b2;">hello@youngmolded.org</a>
+          <p class="text-xs text-[#94a3b8] mt-1">Replies within 1 business day</p>
+        </div>
+        <div class="glass-card p-6 reveal" style="transition-delay:0.1s;">
+          <div class="text-2xl mb-2">💬</div>
+          <h3 class="font-bold text-[#0f172a] mb-1">WhatsApp</h3>
+          <button onclick="openWhatsApp()" class="text-sm font-semibold" style="color:#0891b2;" data-whatsapp>Message us →</button>
+          <p class="text-xs text-[#94a3b8] mt-1">Fastest response for urgent work</p>
+        </div>
+        <div class="glass-card p-6 reveal" style="transition-delay:0.15s;">
+          <div class="text-2xl mb-2">📍</div>
+          <h3 class="font-bold text-[#0f172a] mb-1">Visit Us</h3>
+          <p class="text-sm text-[#475569]">Johannesburg, Gauteng<br>South Africa</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="lg:col-span-2">
+        <div class="glass-card p-8 reveal">
+          <h2 class="display-sm mb-2" style="color:#0f172a;">Send a Message</h2>
+          <p class="text-sm text-[#475569] mb-6">Tell us about your project and we'll get back within one business day.</p>
+          <form onsubmit="handleFormSubmit(event,'contact')" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div><label class="form-label">Full Name *</label><input type="text" class="form-input" placeholder="John Doe" required></div>
+              <div><label class="form-label">Company</label><input type="text" class="form-input" placeholder="Company (Pty) Ltd"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="you@company.com" required></div>
+              <div><label class="form-label">Phone *</label><input type="tel" class="form-input" placeholder="+27 10 000 0000" required></div>
+            </div>
+            <div><label class="form-label">What do you need? *</label>
+              <select class="form-select" required>
+                <option value="">Select a service…</option>
+                <option>Photography</option>
+                <option>Videography</option>
+                <option>Graphic Design</option>
+                <option>Digital Marketing</option>
+                <option>Web Development</option>
+                <option>AI & Technology</option>
+                <option>Business Consulting</option>
+                <option>Event Management</option>
+                <option>Artist Management</option>
+                <option>Other / General Enquiry</option>
+              </select>
+            </div>
+            <div><label class="form-label">Message *</label><textarea class="form-textarea" rows="5" placeholder="Tell us about your project, goals, and timeline…" required></textarea></div>
+            <div class="flex items-start gap-3">
+              <input type="checkbox" class="mt-1" required>
+              <label class="text-xs text-[#475569] leading-relaxed">I consent to Young & Molded Org processing my data in accordance with POPIA. We never share your information.</label>
+            </div>
+            <button type="submit" class="btn-cyan w-full justify-center">Send Message →</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section-pad" style="padding-top:1rem;">
+  <div class="container">
+    <div class="glass-card overflow-hidden reveal">
+      <div class="aspect-video bg-[#e2e8f0] flex items-center justify-center relative">
+        <div class="text-center">
+          <div class="text-5xl mb-3">🗺️</div>
+          <p class="font-bold text-[#0f172a]">Johannesburg, South Africa</p>
+          <p class="text-sm text-[#94a3b8]">Map embed would appear here</p>
+          <p class="text-xs text-[#94a3b8] mt-2">(Replace this block with your Google Maps &lt;iframe&gt; embed)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad" style="padding-top:0;">
+  <div class="container">
+    <div class="card card-highlight p-8 text-center max-w-2xl mx-auto reveal">
+      <h2 class="display-sm mb-3" style="color:#0f172a;">Prefer to skip the form?</h2>
+      <p class="text-[#475569] mb-5 text-sm">Get a formal quote in 2 minutes with our 5-step engine.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="quote.html" class="btn-cyan">Get a Quote →</a>
+        <button onclick="openWhatsApp()" class="btn-whatsapp" data-whatsapp>WhatsApp Instead</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (paste identical) -->
+<footer class="site-footer"><div class="container"><div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#94a3b8]"><p>© 2026 Young & Molded Org (Pty) Ltd. All rights reserved.</p><div class="flex gap-5"><a href="#" class="footer-link">Privacy</a><a href="#" class="footer-link">Terms</a><a href="contact.html" class="footer-link">Contact</a></div></div></div></footer>
+
+<!-- MODAL -->
+<div id="action-modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="flex items-center justify-between mb-5"><h3 class="display-sm" data-modal-title style="color:#0f172a;">Get Started</h3><button onclick="closeModal()" class="text-2xl text-[#94a3b8] hover:text-[#0f172a]">✕</button></div>
+    <p class="text-[#475569] text-sm mb-6" data-modal-desc>Connect with our team.</p>
+    <form onsubmit="handleFormSubmit(event,'consultation')"><label class="form-label">Your Email</label><input type="email" class="form-input mb-4" placeholder="you@company.com" required><button type="submit" class="btn-cyan w-full justify-center" data-modal-cta>Confirm Request</button></form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

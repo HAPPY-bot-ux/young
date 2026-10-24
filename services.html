@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Young & Molded Org</title>
+<meta name="description" content="11 master service categories: Photography, Videography, Graphic Design, Digital Marketing, Web Development, AI & Technology, Business Consulting, Event Management, Artist Management.">
+
+<!-- 1) Tailwind CDN MUST load first -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 2) Then configure Tailwind -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            cyan: '#38e2f8',
+            dark: '#0f172a',
+            subtle: '#f1f5f9',
+            cardBg: 'rgba(255, 255, 255, 0.85)',
+            border: '#e2e8f0'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<!-- 3) Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- 4) Custom CSS LAST (so it can override Tailwind where needed) -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="selection:bg-cyan-300 selection:text-slate-900">
+
+<!-- HEADER -->
+<header id="site-header" class="site-header glass-nav">
+  <div class="top-bar"><div class="container flex flex-wrap items-center justify-between gap-2">        
+  </div></div>
+  <div class="container"><div class="flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg" style="background:#0f172a;color:#38e2f8;">Y</div><div class="leading-tight"><span class="font-black text-lg tracking-tight block text-[#0f172a]">YOUNG & MOLDED</span><span class="text-[10px] tracking-[0.25em] uppercase font-bold" style="color:#0891b2;">ORG · PTY LTD</span></div></a>
+     <nav class="hidden lg:flex items-center gap-7">
+  <a href="index.html" data-nav="index.html" class="nav-link">Home</a>
+  <a href="about.html" data-nav="about.html" class="nav-link">About</a>
+  <a href="services.html" data-nav="services.html" class="nav-link">Services</a>
+  <a href="packages.html" data-nav="packages.html" class="nav-link">Packages</a>
+  <a href="portfolio.html" data-nav="portfolio.html" class="nav-link">Portfolio</a>  
+  <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+</nav>
+    <div class="flex items-center gap-3"><a href="quote.html" class="hidden sm:inline-flex btn-primary" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get a Quote</a><button onclick="openDrawer()" class="lg:hidden p-2" aria-label="Open menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#0f172a;"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+  </div></div>
+</header>
+<div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+<aside id="mobile-drawer" class="mobile-drawer">
+  <div class="flex items-center justify-between mb-8">
+    <span class="font-black tracking-widest text-sm" style="color:#0891b2;">MENU</span>
+    <button onclick="closeDrawer()" class="text-2xl text-[#0f172a]" aria-label="Close">✕</button>
+  </div>
+  <nav class="flex flex-col gap-1">
+    <a href="index.html" class="nav-link" style="display:block;padding:0.85rem 0;">Home</a>
+    <a href="about.html" class="nav-link" style="display:block;padding:0.85rem 0;">About</a>
+    <a href="services.html" class="nav-link" style="display:block;padding:0.85rem 0;">Services</a>
+    <a href="packages.html" class="nav-link" style="display:block;padding:0.85rem 0;">Packages</a>
+    <a href="portfolio.html" class="nav-link" style="display:block;padding:0.85rem 0;">Portfolio</a>   
+    <a href="contact.html" class="nav-link" style="display:block;padding:0.85rem 0;">Contact</a>
+  </nav>
+  <a href="quote.html" class="btn-primary w-full justify-center mt-8">Get a Quote →</a>
+  <button onclick="openWhatsApp()" class="btn-whatsapp w-full justify-center mt-3">WhatsApp Us</button>
+</aside>
+
+<!-- HERO -->
+<section class="hero-section" style="padding-bottom:3rem;">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container relative text-center" style="z-index:1;">
+    <span class="eyebrow">Our Services</span>
+    <h1 class="hero-headline text-[clamp(2.2rem,7vw,5rem)] mt-4 mb-5" style="color:#0f172a;">11 Master Services.<br><span class="text-gradient-cyan">One Partner.</span></h1>
+    <p class="text-[#475569] max-w-2xl mx-auto mb-8">Every service backed by a standardized delivery template: Hero → Deliverables → Audience → Work → Packages → Process → FAQ → Quote.</p>
+    <a href="quote.html" class="btn-cyan">Get a Custom Quote →</a>
+  </div>
+</section>
+
+<!-- SERVICES LIST -->
+<section class="section-pad" style="padding-top:2rem;">
+  <div class="container space-y-6">
+
+    <!-- 01 Photography -->
+    <article id="photography" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">01 — PHOTOGRAPHY</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Photography That Speaks Volumes.</h2>
+          <p class="text-[#475569] text-sm mb-6">Corporate, property, architectural, product, event, portrait, lifestyle, and branding photography — captured with cinematic direction and post-produced to perfection.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ Corporate & Executive Portraits</li><li>✓ Product & E-commerce Shoots</li>
+            <li>✓ Architectural & Property Photography</li><li>✓ Event Coverage</li>
+            <li>✓ Lifestyle & Branding Campaigns</li><li>✓ Full Post-Production & Retouching</li>
+          </ul>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Who It's For</h4>
+          <p class="text-sm text-[#475569] mb-6">Corporate brands, property developers, e-commerce stores, event organisers, and individuals seeking a premium visual identity.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=photography" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Photography Quote →</a>
+            <a href="portfolio.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">View Work</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Packages from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R4,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">half-day corporate shoot</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">Typical turnaround is 5–7 business days for edited galleries.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 Videography -->
+    <article id="videography" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">02 — VIDEOGRAPHY</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Cinematic Video Production.</h2>
+          <p class="text-[#475569] text-sm mb-6">Corporate videos, promo, events, interviews, social video, documentaries, and commercials — scripted, shot, and edited with narrative craft.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ Corporate & Brand Films</li><li>✓ Social Media Video (Reels, TikTok)</li>
+            <li>✓ Event Recap Videos</li><li>✓ Interview & Testimonial Films</li>
+            <li>✓ Documentary Production</li><li>✓ Commercials & Ads</li>
+          </ul>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Who It's For</h4>
+          <p class="text-sm text-[#475569] mb-6">Brands that need scroll-stopping video, event recap content, or cinematic storytelling for launches.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=videography" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Video Quote →</a>
+            <a href="portfolio.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">View Work</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Packages from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R8,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">promo video package</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">Includes scripting, 1-day shoot, 2 revision rounds, and final edit in 4K.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 Graphic Design -->
+    <article id="design" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">03 — GRAPHIC DESIGN</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Brand Identity Built to Last.</h2>
+          <p class="text-[#475569] text-sm mb-6">Logo design, corporate identity, company profiles, brochures, flyers, and social assets — designed with purpose and delivered as scalable kits.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ Logo Design & Variations</li><li>✓ Full Brand Identity Kit</li>
+            <li>✓ Company Profiles & Brochures</li><li>✓ Social Media Asset Kits</li>
+            <li>✓ Packaging & Print Design</li><li>✓ Brand Guidelines Document</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=design" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Design Quote →</a>
+            <a href="portfolio.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">View Work</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Packages from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R3,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">logo design starter</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">Logo packages include 3 concepts, 2 revisions, and full source files.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 Digital Marketing -->
+    <article id="marketing" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">04 — DIGITAL MARKETING</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Marketing That Converts.</h2>
+          <p class="text-[#475569] text-sm mb-6">Social media management, content creation, paid ads, SEO, and brand strategy — data-driven marketing that grows revenue, not just likes.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ Monthly Social Media Management</li><li>✓ Content Calendar & Creation</li>
+            <li>✓ Paid Ads (Meta, Google)</li><li>✓ SEO Audits & Optimization</li>
+            <li>✓ Brand Strategy & Positioning</li><li>✓ Monthly Performance Reports</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=marketing" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Marketing Quote →</a>
+            <a href="packages.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">View Retainers</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Retainers from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R6,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">per month</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">Minimum 3-month commitment for meaningful SEO and paid ad results.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 Web Development -->
+    <article id="web" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">05 — WEB DEVELOPMENT</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Websites That Perform.</h2>
+          <p class="text-[#475569] text-sm mb-6">Corporate websites, e-commerce stores, landing pages, web apps, and ongoing maintenance — built for sub-second load speeds and 90+ PageSpeed scores.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ Custom Corporate Websites</li><li>✓ E-commerce Stores</li>
+            <li>✓ High-Converting Landing Pages</li><li>✓ Web Apps & Dashboards</li>
+            <li>✓ CMS Integration (Strapi/Sanity)</li><li>✓ Ongoing Maintenance & Hosting</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=web&package=web-starter" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Web Quote →</a>
+            <a href="portfolio.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">View Work</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Packages from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R12,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">starter website</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">Websites include responsive design, CMS, SEO setup, and 30-day post-launch support.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 AI & Technology -->
+    <article id="ai" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">06 — AI & TECHNOLOGY</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">AI That Works for You.</h2>
+          <p class="text-[#475569] text-sm mb-6">AI solutions, business automation, chatbots, custom software, and integrations — turn repetitive work into automated pipelines.</p>
+          <h4 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#0891b2;">Deliverables</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-[#475569] mb-6">
+            <li>✓ AI Chatbots & Assistants</li><li>✓ Business Process Automation</li>
+            <li>✓ Custom Software Development</li><li>✓ API & System Integrations</li>
+            <li>✓ Data Pipelines & Dashboards</li><li>✓ AI Strategy & Implementation</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=ai" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get AI Quote →</a>
+            <a href="contact.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Book a Demo</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Projects from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R25,000</p>
+          <p class="text-xs text-[#94a3b8] mb-4">custom AI build</p>
+          <button onclick="toggleAccordion(this)" class="accordion-trigger" style="color:#0f172a;">FAQ <span class="accordion-icon">▾</span></button>
+          <div class="accordion-content"><div class="accordion-content-inner">We'll scope your AI project in a free 30-minute strategy session.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 Business Consulting -->
+    <article id="consulting" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">07 — BUSINESS CONSULTING</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Strategy That Moves You Forward.</h2>
+          <p class="text-[#475569] text-sm mb-6">Strategy, business plans, market research, funding proposals, and growth plans — practical consulting for founders and executives.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=consulting" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Consulting Quote →</a>
+            <a href="contact.html" class="btn-ghost" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Book a Call</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Projects from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R9,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">strategy package</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 08 Event Management -->
+    <article id="events" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">08 — EVENT MANAGEMENT</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Events That Leave a Mark.</h2>
+          <p class="text-[#475569] text-sm mb-6">Corporate events, product launches, brand activations, full production, and event marketing — end-to-end execution.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=events" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Event Quote →</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Events from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R18,000</p>
+          <p class="text-xs text-[#94a3b8] mb-4">corporate activation</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 09 Artist Management -->
+    <article id="artists" class="glass-card p-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-bold tracking-widest" style="color:#0891b2;">09 — ARTIST MANAGEMENT</span>
+          <h2 class="display-sm mt-2 mb-4" style="color:#0f172a;">Building Artist Careers.</h2>
+          <p class="text-[#475569] text-sm mb-6">Artist development, branding, marketing, bookings, and career strategy — for musicians and creatives ready to scale.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="quote.html?service=artist" class="btn-cyan" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get Management Quote →</a>
+          </div>
+        </div>
+        <div class="glass-card p-5" style="background:rgba(56,226,248,0.06);border-color:rgba(56,226,248,0.35);">
+          <h4 class="text-sm font-bold mb-3 text-[#0f172a]">Retainers from</h4>
+          <p class="text-3xl font-black mb-1" style="color:#0891b2;">R7,500</p>
+          <p class="text-xs text-[#94a3b8] mb-4">per month</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad">
+  <div class="container">
+    <div class="card card-highlight p-8 md:p-12 text-center reveal">
+      <h2 class="display-md mb-4" style="color:#0f172a;">Not Sure Which Service?<br><span class="text-gradient-cyan">Let's Figure It Out Together.</span></h2>
+      <p class="text-[#475569] max-w-xl mx-auto mb-8">Book a free 30-minute strategy call and we'll map the right solution for your goals.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="quote.html" class="btn-cyan justify-center">Get a Quote →</a>
+        <button onclick="openWhatsApp()" class="btn-whatsapp justify-center" data-whatsapp>WhatsApp Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (identical to index.html — copy/paste the footer block) -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4"><div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg" style="background:#38e2f8;color:#0f172a;">Y</div><div><span class="font-black text-sm tracking-tight block text-white">YOUNG & MOLDED</span><span class="text-[9px] tracking-[0.25em] uppercase font-bold" style="color:#38e2f8;">ORG · PTY LTD</span></div></div>
+        <p class="text-xs text-[#94a3b8] leading-relaxed mb-4">Creative Solutions. Real Impact. A full-service creative, digital, technology, and business partner based in Johannesburg.</p>
+        <div class="flex gap-3"><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">IG</a><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">IN</a><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">FB</a><a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">X</a></div>
+      </div>
+      <div><h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Services</h4><ul class="space-y-1"><li><a href="services.html#photography" class="footer-link">Photography</a></li><li><a href="services.html#videography" class="footer-link">Videography</a></li><li><a href="services.html#design" class="footer-link">Graphic Design</a></li><li><a href="services.html#web" class="footer-link">Web Development</a></li><li><a href="services.html#ai" class="footer-link">AI & Technology</a></li><li><a href="services.html#consulting" class="footer-link">Business Consulting</a></li></ul></div>
+      <div><h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Company</h4><ul class="space-y-1"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="packages.html" class="footer-link">Packages</a></li><li><a href="portfolio.html" class="footer-link">Portfolio</a></li><li><a href="industries.html" class="footer-link">Industries</a></li><li><a href="creative-hub.html" class="footer-link">Creative Hub</a></li><li><a href="resources.html" class="footer-link">Resources</a></li></ul></div>
+      <div><h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Get in Touch</h4><ul class="space-y-2 text-xs text-[#94a3b8]"><li>📍 Johannesburg, South Africa</li><li><a href="tel:+27100000000" class="footer-link">📞 +27 10 000 0000</a></li><li><a href="mailto:hello@youngmolded.org" class="footer-link">✉️ hello@youngmolded.org</a></li><li>🕒 Mon–Fri, 08:00–17:00</li></ul><a href="quote.html" class="btn-cyan mt-5" style="padding:0.6rem 1.25rem;font-size:0.75rem;">Get a Quote →</a></div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#94a3b8]" style="border-top:1px solid rgba(255,255,255,0.08);">
+      <p>© 2026 Young & Molded Org (Pty) Ltd. All rights reserved.</p>
+      <div class="flex gap-5"><a href="#" class="footer-link" onclick="openModal('Privacy Policy','POPIA-compliant data handling.','Close')">Privacy</a><a href="#" class="footer-link" onclick="openModal('Terms of Service','Standard terms for creative and digital services.','Close')">Terms</a><a href="contact.html" class="footer-link">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="action-modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="flex items-center justify-between mb-5"><h3 class="display-sm" data-modal-title style="color:#0f172a;">Get Started</h3><button onclick="closeModal()" class="text-2xl text-[#94a3b8] hover:text-[#0f172a]">✕</button></div>
+    <p class="text-[#475569] text-sm mb-6" data-modal-desc>Connect with our team.</p>
+    <form onsubmit="handleFormSubmit(event,'consultation')"><label class="form-label">Your Email</label><input type="email" class="form-input mb-4" placeholder="you@company.com" required><button type="submit" class="btn-cyan w-full justify-center" data-modal-cta>Confirm Request</button></form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

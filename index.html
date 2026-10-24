@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Young & Molded Org | Creative Solutions. Real Impact.</title>
+<meta name="description" content="Young & Molded Org — cinematic creative, digital, technology, and business partner. Photography, video, design, web, AI, and growth strategy.">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            cyan: '#38e2f8',
+            dark: '#0f172a',
+            subtle: '#f1f5f9',
+            cardBg: 'rgba(255, 255, 255, 0.85)',
+            border: '#e2e8f0'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="selection:bg-cyan-300 selection:text-slate-900">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header glass-nav">
+ 
+
+  <div class="container">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg shadow-md group-hover:scale-105 transition-transform" style="background:#0f172a;color:#38e2f8;">Y</div>
+        <div class="leading-tight">
+          <span class="font-black text-lg tracking-tight block text-[#0f172a]">YOUNG & MOLDED</span>
+          <span class="text-[10px] tracking-[0.25em] uppercase font-bold" style="color:#0891b2;">ORG · PTY LTD</span>
+        </div>
+      </a>
+    <nav class="hidden lg:flex items-center gap-7">
+  <a href="index.html" data-nav="index.html" class="nav-link">Home</a>
+  <a href="about.html" data-nav="about.html" class="nav-link">About</a>
+  <a href="services.html" data-nav="services.html" class="nav-link">Services</a>
+  <a href="packages.html" data-nav="packages.html" class="nav-link">Packages</a>
+  <a href="portfolio.html" data-nav="portfolio.html" class="nav-link">Portfolio</a>  
+  <a href="contact.html" data-nav="contact.html" class="nav-link">Contact</a>
+</nav>
+      <div class="flex items-center gap-3">
+        <a href="quote.html" class="hidden sm:inline-flex btn-primary" style="padding:0.65rem 1.4rem;font-size:0.8rem;">Get a Quote <span style="width:1.25rem;height:1.25rem;border-radius:50%;background:#38e2f8;color:#0f172a;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;">↗</span></a>
+        <button onclick="openDrawer()" class="lg:hidden p-2" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#0f172a;"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div id="drawer-overlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+<aside id="mobile-drawer" class="mobile-drawer">
+  <div class="flex items-center justify-between mb-8">
+    <span class="font-black tracking-widest text-sm" style="color:#0891b2;">MENU</span>
+    <button onclick="closeDrawer()" class="text-2xl text-[#0f172a]" aria-label="Close">✕</button>
+  </div>
+  <nav class="flex flex-col gap-1">
+    <a href="index.html" class="nav-link" style="display:block;padding:0.85rem 0;">Home</a>
+    <a href="about.html" class="nav-link" style="display:block;padding:0.85rem 0;">About</a>
+    <a href="services.html" class="nav-link" style="display:block;padding:0.85rem 0;">Services</a>
+    <a href="packages.html" class="nav-link" style="display:block;padding:0.85rem 0;">Packages</a>
+    <a href="portfolio.html" class="nav-link" style="display:block;padding:0.85rem 0;">Portfolio</a>
+    <a href="contact.html" class="nav-link" style="display:block;padding:0.85rem 0;">Contact</a>
+  </nav>
+  <a href="quote.html" class="btn-primary w-full justify-center mt-8">Get a Quote →</a>
+  <button onclick="openWhatsApp()" class="btn-whatsapp w-full justify-center mt-3">WhatsApp Us</button>
+</aside>
+
+<!-- ============ HERO ============ -->
+<section class="hero-section">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-grid"></div>
+  <div class="container relative" style="z-index:1;">
+    <div class="text-center lg:text-left max-w-4xl">
+      <span class="eyebrow">Creative · Digital · Technology · Business</span>
+      <h1 class="hero-headline text-[clamp(2.5rem,8vw,6rem)] mb-6 mt-5" style="color:#0f172a;">
+        CREATIVE.<br>
+        DIGITAL.<br>
+        <span style="background:linear-gradient(90deg,#0891b2,#06b6d4);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">TECHNOLOGY.</span><br>
+        BUSINESS.
+      </h1>
+      <p class="text-lg md:text-xl text-[#475569] max-w-2xl mx-auto lg:mx-0 mb-8">
+        Creative Solutions. Real Impact. One partner for photography, video, design, web, AI, and business growth — engineered to move your brand forward.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a href="quote.html" class="btn-cyan justify-center">
+          Get Started
+          <span style="width:1.5rem;height:1.5rem;border-radius:50%;background:#0f172a;color:#38e2f8;display:inline-flex;align-items:center;justify-content:center;font-size:0.75rem;">→</span>
+        </a>
+        <a href="services.html" class="btn-ghost justify-center">Explore Services</a>
+      </div>
+      <!-- Stats strip -->
+      <div class="flex flex-wrap gap-3 mt-10 justify-center lg:justify-start">
+        <div class="stat-chip"><span class="num">120+</span><span class="lbl">Projects</span></div>
+        <div class="stat-chip"><span class="num">9</span><span class="lbl">Verticals</span></div>
+        <div class="stat-chip"><span class="num">98%</span><span class="lbl">Retention</span></div>
+        <div class="stat-chip"><span class="num">5★</span><span class="lbl">Rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 PILLARS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <span class="eyebrow">Core Solutions</span>
+      <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">One Partner.<br>Multiple Solutions.</h2>
+      <p class="text-[#475569]">Four pillars. One seamless creative and technology partner built for the modern brand.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="glass-card p-7 reveal">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-2xl" style="background:rgba(56,226,248,0.15);">📷</div>
+        <h3 class="display-sm mb-2" style="font-size:1.25rem;color:#0f172a;">Creative Media</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Photography, video production, and graphic design that tell your story with cinematic precision.</p>
+      </div>
+      <div class="glass-card p-7 reveal" style="transition-delay:0.05s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-2xl" style="background:rgba(56,226,248,0.15);">💻</div>
+        <h3 class="display-sm mb-2" style="font-size:1.25rem;color:#0f172a;">Digital Solutions</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Web development, digital marketing, and SEO built for speed, scale, and conversion.</p>
+      </div>
+      <div class="glass-card p-7 reveal" style="transition-delay:0.1s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-2xl" style="background:rgba(56,226,248,0.15);">🤖</div>
+        <h3 class="display-sm mb-2" style="font-size:1.25rem;color:#0f172a;">Technology</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">AI solutions, business automation, chatbots, and custom software integrations.</p>
+      </div>
+      <div class="glass-card p-7 reveal" style="transition-delay:0.15s;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5 text-2xl" style="background:rgba(56,226,248,0.15);">📈</div>
+        <h3 class="display-sm mb-2" style="font-size:1.25rem;color:#0f172a;">Business Growth</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Strategy, consulting, business plans, and training that unlock sustainable growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE GRID ============ -->
+<section class="section-pad" style="background:rgba(241,245,249,0.6);border-top:1px solid rgba(226,232,240,0.8);border-bottom:1px solid rgba(226,232,240,0.8);">
+  <div class="container">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal">
+      <div class="max-w-2xl">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">11 Services.<br>Endless Possibilities.</h2>
+        <p class="text-[#475569]">Every service backed by our standardized delivery process: Strategy → Execution → Measurement → Growth.</p>
+      </div>
+      <a href="services.html" class="btn-ghost whitespace-nowrap">All Services →</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <a href="services.html#photography" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">01</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Photography</h3><p class="text-xs text-[#94a3b8]">Corporate, product, event</p></a>
+      <a href="services.html#videography" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">02</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Videography</h3><p class="text-xs text-[#94a3b8]">Promos, social, docs</p></a>
+      <a href="services.html#design" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">03</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Graphic Design</h3><p class="text-xs text-[#94a3b8]">Logo, identity, brochures</p></a>
+      <a href="services.html#marketing" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">04</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Digital Marketing</h3><p class="text-xs text-[#94a3b8]">Social, ads, SEO</p></a>
+      <a href="services.html#web" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">05</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Web Development</h3><p class="text-xs text-[#94a3b8]">Corporate, e-com, apps</p></a>
+      <a href="services.html#ai" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">06</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">AI & Technology</h3><p class="text-xs text-[#94a3b8]">Automation, chatbots</p></a>
+      <a href="services.html#consulting" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">07</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Business Consulting</h3><p class="text-xs text-[#94a3b8]">Strategy, research</p></a>
+      <a href="services.html#events" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">08</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Event Management</h3><p class="text-xs text-[#94a3b8]">Launches, activations</p></a>
+      <a href="services.html#artists" class="glass-card p-5 reveal"><span class="text-xs font-bold tracking-widest" style="color:#0891b2;">09</span><h3 class="font-bold mt-2 mb-1 text-sm text-[#0f172a]">Artist Management</h3><p class="text-xs text-[#94a3b8]">Development, bookings</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL PROOF ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <span class="eyebrow">Social Proof</span>
+      <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">Trusted by Brands<br>That Demand More.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="glass-card p-7 reveal">
+        <div class="flex gap-1 mb-4" style="color:#f59e0b;">★★★★★</div>
+        <p class="text-sm mb-5 leading-relaxed text-[#334155]">"Young & Molded transformed our entire digital presence. The cinematic brand video alone boosted our inbound leads by 210%."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:rgba(56,226,248,0.2);color:#0891b2;">TM</div>
+          <div><p class="text-sm font-bold text-[#0f172a]">Thabo Mokoena</p><p class="text-xs text-[#94a3b8]">CEO, African Equity Group</p></div>
+        </div>
+      </div>
+      <div class="glass-card p-7 reveal" style="transition-delay:0.05s;">
+        <div class="flex gap-1 mb-4" style="color:#f59e0b;">★★★★★</div>
+        <p class="text-sm mb-5 leading-relaxed text-[#334155]">"Their web development team delivered a stunning, lightning-fast e-commerce platform. Sales tripled in Q1."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:rgba(56,226,248,0.2);color:#0891b2;">SN</div>
+          <div><p class="text-sm font-bold text-[#0f172a]">Sarah Naidoo</p><p class="text-xs text-[#94a3b8]">Founder, Luxe Retail</p></div>
+        </div>
+      </div>
+      <div class="glass-card p-7 reveal" style="transition-delay:0.1s;">
+        <div class="flex gap-1 mb-4" style="color:#f59e0b;">★★★★★</div>
+        <p class="text-sm mb-5 leading-relaxed text-[#334155]">"The AI automation they built for our sales pipeline saves our team 40 hours a week. Game-changing."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:rgba(56,226,248,0.2);color:#0891b2;">DK</div>
+          <div><p class="text-sm font-bold text-[#0f172a]">David Khumalo</p><p class="text-xs text-[#94a3b8]">COO, TechFlow SA</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6-STEP PROCESS ============ -->
+<section class="section-pad" style="background:rgba(241,245,249,0.6);border-top:1px solid rgba(226,232,240,0.8);">
+  <div class="container">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <span class="eyebrow">Our Process</span>
+      <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">Six Steps.<br>Flawless Delivery.</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">01</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Discover</h3><p class="text-sm text-[#475569]">Deep-dive into your brand, market, and goals.</p></div>
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">02</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Define</h3><p class="text-sm text-[#475569]">Scope, timeline, and KPIs locked and signed off.</p></div>
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">03</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Create</h3><p class="text-sm text-[#475569]">Design and build with cinematic precision.</p></div>
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">04</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Test</h3><p class="text-sm text-[#475569]">QA across devices, browsers, and user flows.</p></div>
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">05</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Launch</h3><p class="text-sm text-[#475569]">Deploy, track, and train your team.</p></div>
+      <div class="glass-card p-6 reveal"><span class="text-3xl font-black" style="color:#0891b2;">06</span><h3 class="font-bold mt-3 mb-2 text-[#0f172a]">Grow</h3><p class="text-sm text-[#475569]">Ongoing optimization, support, and reporting.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRY LINKS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal">
+      <div>
+        <span class="eyebrow">Industries</span>
+        <h2 class="display-md mt-4" style="color:#0f172a;">Built for Your Industry.</h2>
+      </div>
+      <a href="industries.html" class="btn-ghost whitespace-nowrap">All Industries →</a>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 reveal">
+      <a href="industries.html#retail" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🛒</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Retail & E-Com</p></a>
+      <a href="industries.html#finance" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🏦</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Finance</p></a>
+      <a href="industries.html#hospitality" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🍽️</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Hospitality</p></a>
+      <a href="industries.html#healthcare" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🏥</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Healthcare</p></a>
+      <a href="industries.html#education" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🎓</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Education</p></a>
+      <a href="industries.html#property" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🏢</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Property</p></a>
+      <a href="industries.html#arts" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🎨</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Arts & Culture</p></a>
+      <a href="industries.html#tech" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">⚡</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">Tech & SaaS</p></a>
+      <a href="industries.html#ngo" class="glass-card p-4 text-center hover:border-cyan-400 transition-colors"><div class="text-2xl">🤝</div><p class="text-xs font-semibold mt-2 text-[#0f172a]">NGOs</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DUAL CTA ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="card card-highlight p-8 md:p-14 text-center reveal">
+      <span class="eyebrow">Ready to Start?</span>
+      <h2 class="display-md mt-4 mb-4" style="color:#0f172a;">Let's Build Something<br><span class="text-gradient-cyan">Remarkable.</span></h2>
+      <p class="text-[#475569] max-w-xl mx-auto mb-8">Get a tailored quote in minutes, or chat directly with our team on WhatsApp. No pressure — just real solutions.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="quote.html" class="btn-cyan justify-center">Get a Quote <span>→</span></a>
+        <button onclick="openWhatsApp()" class="btn-whatsapp justify-center" data-whatsapp>WhatsApp Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center font-black text-lg" style="background:#38e2f8;color:#0f172a;">Y</div>
+          <div><span class="font-black text-sm tracking-tight block text-white">YOUNG & MOLDED</span><span class="text-[9px] tracking-[0.25em] uppercase font-bold" style="color:#38e2f8;">ORG · PTY LTD</span></div>
+        </div>
+        <p class="text-xs text-[#94a3b8] leading-relaxed mb-4">Creative Solutions. Real Impact. A full-service creative, digital, technology, and business partner based in Johannesburg.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">IG</a>
+          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">IN</a>
+          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">FB</a>
+          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center text-xs border border-[#334155] hover:border-[#38e2f8] hover:text-[#38e2f8] transition-colors">X</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Services</h4>
+        <ul class="space-y-1">
+          <li><a href="services.html#photography" class="footer-link">Photography</a></li>
+          <li><a href="services.html#videography" class="footer-link">Videography</a></li>
+          <li><a href="services.html#design" class="footer-link">Graphic Design</a></li>
+          <li><a href="services.html#web" class="footer-link">Web Development</a></li>
+          <li><a href="services.html#ai" class="footer-link">AI & Technology</a></li>
+          <li><a href="services.html#consulting" class="footer-link">Business Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Company</h4>
+        <ul class="space-y-1">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="packages.html" class="footer-link">Packages</a></li>
+          <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+          <li><a href="industries.html" class="footer-link">Industries</a></li>
+          <li><a href="creative-hub.html" class="footer-link">Creative Hub</a></li>
+          <li><a href="resources.html" class="footer-link">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold mb-4 uppercase tracking-wider" style="color:#38e2f8;">Get in Touch</h4>
+        <ul class="space-y-2 text-xs text-[#94a3b8]">
+          <li>📍 Johannesburg, South Africa</li>
+          <li><a href="tel:+27100000000" class="footer-link">📞 +27 10 000 0000</a></li>
+          <li><a href="mailto:hello@youngmolded.org" class="footer-link">✉️ hello@youngmolded.org</a></li>
+          <li>🕒 Mon–Fri, 08:00–17:00</li>
+        </ul>
+        <a href="quote.html" class="btn-cyan mt-5" style="padding:0.6rem 1.25rem;font-size:0.75rem;">Get a Quote →</a>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[#94a3b8]" style="border-top:1px solid rgba(255,255,255,0.08);">
+      <p>© 2026 Young & Molded Org (Pty) Ltd. All rights reserved.</p>
+      <div class="flex gap-5">
+        <a href="#" class="footer-link" onclick="openModal('Privacy Policy','POPIA-compliant data handling.','Close')">Privacy</a>
+        <a href="#" class="footer-link" onclick="openModal('Terms of Service','Standard terms for creative and digital services.','Close')">Terms</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div id="action-modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="flex items-center justify-between mb-5">
+      <h3 class="display-sm" data-modal-title style="color:#0f172a;">Get Started</h3>
+      <button onclick="closeModal()" class="text-2xl text-[#94a3b8] hover:text-[#0f172a]" aria-label="Close">✕</button>
+    </div>
+    <p class="text-[#475569] text-sm mb-6" data-modal-desc>Connect with our team.</p>
+    <form onsubmit="handleFormSubmit(event,'consultation')">
+      <label class="form-label">Your Email</label>
+      <input type="email" class="form-input mb-4" placeholder="you@company.com" required>
+      <button type="submit" class="btn-cyan w-full justify-center" data-modal-cta>Confirm Request</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
